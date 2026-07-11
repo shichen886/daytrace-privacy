@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="DayTrace 日迹第三方 SDK 与系统组件清单">
+  <meta name="description" content="DayTrace 日迹时光第三方 SDK 与系统组件清单">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
-  <title>第三方 SDK 清单 | 日迹</title>
+  <title>第三方 SDK 清单 | 日迹时光</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,8 +14,8 @@
   <a class="skip-link" href="#main">跳到主要内容</a>
   <header class="site-header">
     <a class="brand" href="index.html">
-      <img src="favicon.png" alt="日迹应用图标" width="192" height="192">
-      <span>日迹</span>
+      <img src="favicon.png" alt="日迹时光应用图标" width="192" height="192">
+      <span>日迹时光</span>
     </a>
     <nav class="site-nav" aria-label="主要导航">
       <a href="privacy.html">隐私政策</a>
@@ -27,7 +27,7 @@
   <main id="main" class="legal">
     <header class="legal-header">
       <h1>第三方 SDK 与系统组件清单</h1>
-      <p class="meta">适用版本：日迹 0.5.0<br>更新日期：2026 年 7 月 11 日</p>
+      <p class="meta">适用版本：日迹时光 0.5.0<br>更新日期：2026 年 7 月 12 日</p>
       <p>本清单根据当前 Flutter 依赖、Android Gradle 依赖、原生代码和合并 Manifest 整理。</p>
     </header>
 
@@ -38,7 +38,7 @@
           <dt>提供方</dt><dd>Google 与 Flutter 开源社区</dd>
           <dt>使用目的</dt><dd>应用界面、交互和跨平台运行时</dd>
           <dt>处理的数据</dt><dd>在设备内呈现用户输入和本地业务数据</dd>
-          <dt>是否联网</dt><dd>日迹正式业务不通过 Flutter 上传用户内容；调试构建会为开发工具通信使用网络</dd>
+          <dt>是否联网</dt><dd>本应用正式业务不通过 Flutter 上传用户内容；调试构建会为开发工具通信使用网络</dd>
           <dt>上传用户内容</dt><dd>否</dd>
           <dt>官方说明</dt><dd><a href="https://flutter.dev/privacy" rel="noreferrer">Flutter Privacy</a></dd>
         </dl>
@@ -63,7 +63,7 @@
           <dt>使用目的</dt><dd>识别用户主动选择图片中的中文文字</dd>
           <dt>处理的数据</dt><dd>所选图片及本机识别结果；SDK 还可能处理设备信息、应用信息、安装标识、性能指标、API 配置、输入输出大小、事件类型和错误码</dd>
           <dt>是否联网</dt><dd>识别模型随应用打包，识别在设备上完成；SDK 可能联系 Google 获取维护信息并发送加密的运行指标</dd>
-          <dt>上传用户内容</dt><dd>输入图片和识别结果不发送给 Google，也不发送给日迹开发者</dd>
+          <dt>上传用户内容</dt><dd>输入图片和识别结果不发送给 Google，也不发送给本应用开发者</dd>
           <dt>官方说明</dt><dd><a href="https://developers.google.com/ml-kit/vision/text-recognition/v2/android" rel="noreferrer">Android 文字识别</a>，<a href="https://developers.google.com/ml-kit/terms" rel="noreferrer">条款与隐私</a>，<a href="https://developers.google.com/ml-kit/android-data-disclosure" rel="noreferrer">数据披露</a></dd>
         </dl>
       </article>
@@ -74,8 +74,8 @@
           <dt>提供方</dt><dd>Google Android 系统</dd>
           <dt>使用目的</dt><dd>选择 OCR 图片、打开备份文件和选择备份保存位置</dd>
           <dt>处理的数据</dt><dd>用户在系统界面主动选择的图片、JSON 文件或保存目标</dd>
-          <dt>是否联网</dt><dd>日迹本身不联网；如果用户选择网盘等文档提供方，其联网行为由该提供方负责</dd>
-          <dt>上传用户内容</dt><dd>日迹不上传。文件是否进入第三方存储由用户选择的位置决定</dd>
+          <dt>是否联网</dt><dd>本应用本身不联网；如果用户选择网盘等文档提供方，其联网行为由该提供方负责</dd>
+          <dt>上传用户内容</dt><dd>本应用不上传。文件是否进入第三方存储由用户选择的位置决定</dd>
           <dt>官方说明</dt><dd><a href="https://developer.android.com/guide/topics/providers/document-provider" rel="noreferrer">Storage Access Framework</a></dd>
         </dl>
       </article>
@@ -100,4 +100,3 @@
   </footer>
 </body>
 </html>
-
